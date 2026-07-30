@@ -25,7 +25,7 @@ html, body {
 
 .navbar-brand {
     font-weight: 800;
-    padding-right: 0;
+    padding-right: 125px;
 }
 
 .navbar-brand img {
