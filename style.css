@@ -11,6 +11,10 @@ html, body {
 }
 
 .desktop-nav {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
     background-color: #FFFFFF;
     border-bottom: solid 1px rgb(220, 220, 220);
 }
