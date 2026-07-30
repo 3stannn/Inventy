@@ -56,11 +56,13 @@ html, body {
     font-weight: 600;
 }
 
-.heading h1,
-.heading p {
+.heading h1 {
     width: 80%;
 }
 
+.light-p {
+    font-weight: 400;
+}
 .heading {
     font-weight: 600;
 }
