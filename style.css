@@ -20,6 +20,11 @@ html, body {
     padding-right: 150px;
 }
 
+.navbar-brand img {
+    width: 20px;
+    height: auto;
+}
+
 .nav-item {
     padding-right: 20px;
 }
