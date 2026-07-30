@@ -5,6 +5,7 @@ html body {
 }
 
 .desktop-nav {
+    background-color: #FFFFFF;
     border-bottom: solid 1px rgb(220, 220, 220);
 }
 
@@ -58,8 +59,10 @@ button {
 }
 
 .card {
+    border-radius: 20px;
     background-color: #000000;
-    
+    min-height: 350px;
+    padding: 10px;
 }
 
 @media (min-width: 768px) {
@@ -76,10 +79,21 @@ button {
 @media (max-width: 576px) {
     .mobile-nav {
         opacity: 1;
+        background-color: #FFFFFF;
+        border-bottom: solid 1px rgb(220, 220, 220);
     }
 
     .desktop-nav {
         opacity: 0;
         pointer-events: none;
+    }
+
+    .card {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .hero-section.row {
+        height: auto;
     }
 }
