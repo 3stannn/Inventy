@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&display=swap');
+
+html body {
+    font-family: 'Geist', sans-serif;
+}
+
+.desktop-nav {
+    border-bottom: solid 1px rgb(220, 220, 220);
+}
+
+.navbar-brand {
+    font-weight: 800;
+    padding-right: 100px;
+}
+
+.nav-item {
+    padding-right: 20px;
+}
+
+.nav-link {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.navbar-toggler {
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    box-shadow: none;
+    outline: none;
+}
+
+.hero-section.row {
+    height: 500px;
+    padding-top: 100px;
+}
+
+.heading h1,
+.heading h2 {
+    font-weight: 600;
+}
+
+.heading h1,
+.heading p {
+    width: 80%;
+}
+
+button {
+    border: 1px solid #000000;
+    padding: 10px;
+    background-color: #000000;
+    color: #f2f2f2;
+    font-weight: 500;
+}
+
+.card {
+    background-color: #000000;
+    
+}
+
+@media (min-width: 768px) {
+    .mobile-nav {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .desktop-nav {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 576px) {
+    .mobile-nav {
+        opacity: 1;
+    }
+
+    .desktop-nav {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
