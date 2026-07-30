@@ -4,6 +4,10 @@ html body {
     font-family: 'Geist', sans-serif;
 }
 
+.container {
+    margin-bottom: 100px;
+}
+
 .desktop-nav {
     background-color: #FFFFFF;
     border-bottom: solid 1px rgb(220, 220, 220);
@@ -88,9 +92,12 @@ button {
         pointer-events: none;
     }
 
+    .container {
+        margin-bottom: 50px;
+    }
+
     .card {
         margin-top: 50px;
-        margin-bottom: 50px;
     }
 
     .hero-section.row {
