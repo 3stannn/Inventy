@@ -15,7 +15,7 @@ html body {
 
 .navbar-brand {
     font-weight: 800;
-    padding-right: 100px;
+    padding-right: 150px;
 }
 
 .nav-item {
@@ -54,6 +54,10 @@ html body {
     width: 80%;
 }
 
+.heading {
+    font-weight: 600;
+}
+
 button {
     border: 1px solid #000000;
     padding: 10px;
@@ -62,11 +66,17 @@ button {
     font-weight: 500;
 }
 
-.card {
+.hero-card {
     border-radius: 20px;
     background-color: #000000;
     min-height: 350px;
     padding: 10px;
+}
+
+.card {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 0;
 }
 
 @media (min-width: 768px) {
@@ -96,7 +106,7 @@ button {
         margin-bottom: 50px;
     }
 
-    .card {
+    .hero-card {
         margin-top: 50px;
     }
 
