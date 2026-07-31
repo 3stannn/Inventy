@@ -173,6 +173,36 @@ button {
     color: #000000;
 }
 
+footer {
+    text-align: center;
+    background-color: #000000;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 0%;
+    padding: 1%;
+    margin-top: 30px;
+}
+
+.footer-text {
+    font-family: "Geist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #f2f2f2;
+    font-size: 0.875rem;
+}
+
+.footer-text .top-text{
+    color: white;
+    font-weight: 600;
+}
+
+.footer-text .bottom-text a{
+    color: yellow;
+    text-decoration: none;
+    font-family: "Geist", sans-serif;
+    font-weight: 600;
+}
+
 @media (min-width: 768px) {
     .mobile-nav {
         opacity: 0;
