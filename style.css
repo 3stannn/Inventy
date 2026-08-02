@@ -73,21 +73,21 @@ html, body {
 }
 
 button {
-    border: 1px solid #000000;
+    border: 1px solid #0D0D0D;
     padding: 10px;
-    background-color: #000000;
+    background-color: #0D0D0D;
     color: #f2f2f2;
     font-weight: 500;
 }
 
 .heading button:hover {
     background-color: yellow;
-    color: #000000;
+    color: #0D0D0D;
 }
 
 .terminal-card {
     border-radius: 12px;
-    background-color: #000000;
+    background-color: #0D0D0D;
     min-height: 350px;
     padding: 20px;
 }
@@ -130,23 +130,23 @@ button {
 
 .card.basic button:hover {
     background-color: yellow;
-    color: #000000;
+    color: #0D0D0D;
 }
 
 .card.pro {
-    background-color: #000000;
+    background-color: #0D0D0D;
     color: #f2f2f2;
     padding: 20px;
 }
 
 .card.pro button {
     background-color: #f2f2f2;
-    color: #000000;
+    color: #0D0D0D;
 }
 
 .card.pro button:hover {
     background-color: yellow;
-    color: #000000;
+    color: #0D0D0D;
 }
 
 .ad-container {
@@ -170,7 +170,7 @@ button {
 
 .ad-container button:hover {
     background-color: yellow;
-    color: #000000;
+    color: #0D0D0D;
 }
 
 @media (min-width: 768px) {
