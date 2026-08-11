@@ -24,7 +24,8 @@ html, body {
 }
 
 .navbar-brand {
-    font-weight: 800;
+    font-weight: 600;
+    font-size: 15px;
     padding-right: 125px;
 }
 
@@ -38,7 +39,7 @@ html, body {
 }
 
 .nav-link {
-    font-weight: 600;
+    font-weight: 400;
     font-size: 15px;
 }
 
