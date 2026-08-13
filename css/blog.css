@@ -1,0 +1,55 @@
+body {
+    background-color: #0F0F12;
+}
+
+::selection {
+    background-color: #f2f2f2;
+    color: #0D0D0D;
+}
+
+.navbar {
+    background: rgba(15, 15, 18, 0.45);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+.desktop-nav,
+.mobile-nav {
+    background: rgba(15, 15, 18, 0.45);
+}
+
+.navbar-brand {
+    font-weight: 600;
+}
+
+.navbar-brand,
+.navbar-brand:hover,
+.navbar-brand:focus {
+    color: #ffffff;
+}
+
+.hero-blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; 
+    text-align: center;
+}
+
+.hero-blog h1 {
+    color: white;
+    font-weight: 600;
+}
+
+.gradient-purple {
+    background: #9058D7;
+    background: linear-gradient(152deg,rgba(144, 88, 215, 1) 0%, rgba(220, 172, 255, 1) 100%);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+@media (max-width: 576px) {
+    
+}
