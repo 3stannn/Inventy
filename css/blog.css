@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
 body {
     background-color: #0F0F12;
 }
@@ -30,24 +32,12 @@ body {
     color: #ffffff;
 }
 
-.hero-blog {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh; 
-    text-align: center;
+.heading h1{
+    color: #f2f2f2;
 }
 
-.hero-blog h1 {
-    color: white;
-    font-weight: 600;
-}
-
-.gradient-purple {
-    background: #9058D7;
-    background: linear-gradient(152deg,rgba(144, 88, 215, 1) 0%, rgba(220, 172, 255, 1) 100%);
-    padding: 10px;
-    border-radius: 10px;
+.light-p {
+    color: #A1A1AA;
 }
 
 @media (max-width: 576px) {
