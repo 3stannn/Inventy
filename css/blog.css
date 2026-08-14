@@ -10,7 +10,7 @@ body {
 }
 
 .navbar {
-    background: rgba(15, 15, 18, 0.45);
+    background-color: #0F0F12;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -19,7 +19,7 @@ body {
 
 .desktop-nav,
 .mobile-nav {
-    background: rgba(15, 15, 18, 0.45);
+    background-color: #0F0F12;
 }
 
 .navbar-brand {
