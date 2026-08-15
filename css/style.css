@@ -159,33 +159,6 @@ button {
     color: #f2f2f2;
 }
 
-.ad-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: #f2f2f2;
-    padding: 20px;
-    margin-bottom: 100px;
-}
-
-.ad-container h2 {
-    font-weight: 800;
-}
-
-.ad-container input {
-    padding: 10px;
-    border: 1px solid #d4d4d4;
-}
-
-.ad-container button {
-    font-size: 15px;
-}
-
-.ad-container button:hover {
-    background-color: #CF9704;
-    color: #f2f2f2;
-}
 
 @media (min-width: 768px) {
     .mobile-nav {

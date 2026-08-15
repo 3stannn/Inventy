@@ -45,6 +45,11 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+.hero-section.row {
+    height: auto;
+    padding-top: 100px;
+}
+
 @media (max-width: 576px) {
     
 }
