@@ -88,6 +88,7 @@ html, body {
 
 button {
     border: 1px solid #0D0D0D;
+    border-radius: 10px;
     padding: 10px;
     background-color: #0D0D0D;
     color: #f2f2f2;
@@ -105,6 +106,12 @@ button {
     background-color: #0D0D0D;
     min-height: 350px;
     padding: 20px;
+    box-shadow:
+      0 1px 1px hsl(0deg 0% 0% / 0.075),
+      0 2px 2px hsl(0deg 0% 0% / 0.075),
+      0 4px 4px hsl(0deg 0% 0% / 0.075),
+      0 8px 8px hsl(0deg 0% 0% / 0.075),
+      0 16px 16px hsl(0deg 0% 0% / 0.075)
 }
 
 .purple {
@@ -155,6 +162,12 @@ button {
     background-color: #0D0D0D;
     color: #f2f2f2;
     padding: 20px;
+    box-shadow:
+      0 1px 1px hsl(0deg 0% 0% / 0.075),
+      0 2px 2px hsl(0deg 0% 0% / 0.075),
+      0 4px 4px hsl(0deg 0% 0% / 0.075),
+      0 8px 8px hsl(0deg 0% 0% / 0.075),
+      0 16px 16px hsl(0deg 0% 0% / 0.075)
 }
 
 .card.pro button {
@@ -165,6 +178,11 @@ button {
 .card.pro button:hover {
     background-color: #CF9704;
     color: #f2f2f2;
+}
+
+.card.basic button,
+.card.pro button {
+    width: 100%;
 }
 
 footer {
