@@ -22,10 +22,6 @@ body {
     background-color: #0F0F12;
 }
 
-.navbar-brand {
-    font-weight: 600;
-}
-
 .navbar-brand,
 .navbar-brand:hover,
 .navbar-brand:focus {
