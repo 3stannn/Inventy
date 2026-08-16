@@ -145,6 +145,12 @@ button {
     background-color: #0D0D0D;
     color: #f2f2f2;
     border-radius: 12px;
+    box-shadow:
+      0 1px 1px hsl(0deg 0% 0% / 0.075),
+      0 2px 2px hsl(0deg 0% 0% / 0.075),
+      0 4px 4px hsl(0deg 0% 0% / 0.075),
+      0 8px 8px hsl(0deg 0% 0% / 0.075),
+      0 16px 16px hsl(0deg 0% 0% / 0.075)
 }
 
 .card.basic {
@@ -155,6 +161,7 @@ button {
 
 .card.basic button:hover {
     background-color: #CF9704;
+    border: solid 1px #CF9704;
     color: #f2f2f2;
 }
 
@@ -212,11 +219,10 @@ footer button:hover {
 }
 
 .copyright {
-    background-color: #CF9704;
-    height: 40px;
     justify-content: center;
     text-align: center;
     padding: 10px;
+    border-top: solid 1px rgba(220, 220, 220, 0.2);
 }
 
 .copyright p {
