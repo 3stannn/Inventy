@@ -119,7 +119,7 @@ button {
 }
 
 .orange {
-    color: #D18F49;
+    color: #CF9704;
 }
 
 .pink {
@@ -188,6 +188,40 @@ button {
 footer {
     background-color: #0D0D0D;
     color: #f2f2f2;
+}
+
+footer a {
+    text-decoration: none;
+    color: #f2f2f2;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+footer a:hover {
+    color: #CF9704;
+}
+
+footer button {
+    background-color: #f2f2f2;
+    color: #0D0D0D;
+}
+
+footer button:hover {
+    background-color: #CF9704;
+    color: #f2f2f2;
+}
+
+.copyright {
+    background-color: #CF9704;
+    height: 40px;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.copyright p {
+    font-weight: 400;
+    font-size: 12px;
 }
 
 @media (min-width: 768px) {
