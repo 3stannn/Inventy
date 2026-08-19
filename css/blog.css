@@ -171,6 +171,7 @@ a {
     color: #0D0D0D;
     padding: 10px 30px;
     border-radius: 8px;
+    width: 100%;
 }
 
 .modal button:hover {
