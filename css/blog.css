@@ -140,6 +140,7 @@ a {
     border-radius: 50%;
     object-fit: cover;
     flex-shrink: 0;
+    border: 1px solid #9058D7;
 }
 
 .profile-chip .name {
