@@ -161,6 +161,10 @@ a {
     padding: 4px;
 }
 
+.modal-body .read {
+    font-size: 12px;
+}
+
 .modal-body p {
     font-weight: 200;
     font-size: 14px;
