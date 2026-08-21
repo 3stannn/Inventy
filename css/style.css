@@ -88,7 +88,7 @@ html, body {
 
 button {
     border: 1px solid #0D0D0D;
-    border-radius: 12px;
+    border-radius: 0;
     padding: 10px;
     background-color: #0D0D0D;
     color: #f2f2f2;
