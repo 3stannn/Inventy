@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist+Pixel&family=Geist:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
@@ -7,13 +7,13 @@
 }
 
 html, body {
-    font-family: "Plus Jakarta Sans", sans-serif;
+    font-family: "Geist", sans-serif;
     scroll-behavior: smooth;
     scroll-padding-top: 100px;
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: #0D0D0D;
+    background-color: #000000;
     color: #f2f2f2;
 }
 
@@ -23,7 +23,7 @@ a {
 
 ::selection {
     background-color: #f2f2f2;
-    color: #0D0D0D;
+    color: #000000;
 }
 
 /* Layout & Containers */
@@ -37,7 +37,7 @@ a {
 
 /* Navigation */
 .navbar {
-    background-color: #0D0D0D;
+    background-color: #000000;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -49,17 +49,18 @@ a {
     top: 0;
     z-index: 1000;
     width: 100%;
-    background-color: #0D0D0D;
+    background-color: #000000;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .mobile-nav {
-    background-color: #0D0D0D;
+    background-color: #000000;
 }
 
 .navbar-brand,
 .navbar-brand:hover,
 .navbar-brand:focus {
+    font-family: "Geist Pixel", monospace;
     font-weight: 800;
     padding-right: 125px;
     color: #ffffff;
@@ -84,7 +85,7 @@ a {
 
 /* Hero Section */
 .hero-heading {
-    background-color: #0D0D0D;
+    background-color: #000000;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -94,7 +95,7 @@ a {
 }
 
 .heading h1 {
-    font-weight: 900;
+    font-weight: 600;
     font-size: 50px;
     width: 80%;
     color: #f2f2f2;
@@ -106,6 +107,7 @@ a {
 }
 
 .purple {
+    font-family: "Geist Pixel", monospace;
     color: #9058D7;
 }
 
@@ -115,7 +117,7 @@ a {
     height: auto;
     border-radius: 12px;
     padding: 0;
-    background-color: #0D0D0D;
+    background-color: #000000;
     color: #f2f2f2;
     border: none;
 }
@@ -149,7 +151,7 @@ a {
 .date,
 .read {
     color: #A1A1AA;
-    font-family: "Courier Prime", monospace;
+    font-family: "Geist Pixel", monospace;
     font-weight: 100;
     font-size: 12px;
 }
@@ -160,7 +162,7 @@ a {
 }
 
 .modal-content {
-    background-color: #0D0D0D;
+    background-color: #000000;
     color: #f2f2f2;
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 20px;
@@ -223,23 +225,18 @@ a {
 }
 
 .modal button {
-    background-color: #f2f2f2;
-    color: #0D0D0D;
-    padding: 10px 30px;
-    border-radius: 12px;
-    border: 1px solid transparent;
-    width: 100%;
-}
-
-.modal button:hover {
-    background-color: #0D0D0D;
+    background-color: #000000;
     color: #f2f2f2;
+    padding: 8px;
     border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    width: 100%;
+    font-size: 12px;
 }
 
 /* Footer */
 footer {
-    background-color: #0D0D0D;
+    background-color: #000000;
     color: #f2f2f2;
     border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -282,7 +279,7 @@ footer a:hover {
 @media (max-width: 576px) {
     .mobile-nav {
         opacity: 1;
-        background-color: #0D0D0D;
+        background-color: #000000;
         border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     }
 
