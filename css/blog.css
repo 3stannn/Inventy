@@ -14,7 +14,7 @@ html, body {
     display: flex;
     flex-direction: column;
     background-color: #000000;
-    color: #FFFFFFf2;
+    color: #FFFFFF;
 }
 
 a {
@@ -22,7 +22,7 @@ a {
 }
 
 ::selection {
-    background-color: #FFFFFFf2;
+    background-color: #FFFFFF;
     color: #000000;
 }
 
@@ -96,7 +96,7 @@ a {
     font-weight: 600;
     font-size: 50px;
     width: 80%;
-    color: #FFFFFFf2;
+    color: #FFFFFF;
 }
 
 .light-p {
@@ -115,7 +115,7 @@ a {
     border-radius: 12px;
     padding: 0;
     background-color: #000000;
-    color: #FFFFFFf2;
+    color: #FFFFFF;
     border: none;
 }
 
@@ -138,7 +138,7 @@ a {
 }
 
 .title {
-    color: #FFFFFFf2;
+    color: #FFFFFF;
 }
 
 .title:hover {
@@ -159,7 +159,7 @@ a {
 
 .modal-content {
     background-color: #000000;
-    color: #FFFFFFf2;
+    color: #FFFFFF;
     border: 1px solid #313131;
     border-radius: 20px;
     padding: 4px;
@@ -216,13 +216,13 @@ a {
 }
 
 .modal-footer {
-    border-top: 1px solid #313131;
+    border: none;
     padding: 0;
 }
 
 .modal button {
     background-color: #000000;
-    color: #FFFFFFf2;
+    color: #A1A1AA;
     padding: 8px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 12px;
@@ -230,15 +230,19 @@ a {
     font-size: 12px;
 }
 
+.modal button:hover {
+    color: #FFFFFF;
+}
+
 footer {
     background-color: #000000;
-    color: #FFFFFFf2;
+    color: #FFFFFF;
     border-top: 1px solid #313131;
 }
 
 footer a {
     text-decoration: none;
-    color: #FFFFFFf2;
+    color: #FFFFFF;
     font-weight: 400;
     font-size: 12px;
 }
