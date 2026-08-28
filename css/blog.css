@@ -14,7 +14,7 @@ html, body {
     display: flex;
     flex-direction: column;
     background-color: #000000;
-    color: #f2f2f2;
+    color: #FFFFFFf2;
 }
 
 a {
@@ -22,7 +22,7 @@ a {
 }
 
 ::selection {
-    background-color: #f2f2f2;
+    background-color: #FFFFFFf2;
     color: #000000;
 }
 
@@ -38,7 +38,7 @@ a {
     background-color: #000000;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid #313131;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
 }
 
@@ -48,20 +48,22 @@ a {
     z-index: 1000;
     width: 100%;
     background-color: #000000;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid #313131;
 }
 
 .mobile-nav {
     background-color: #000000;
 }
 
-.navbar-brand,
-.navbar-brand:hover,
-.navbar-brand:focus {
+.navbar-brand {
     font-family: "Geist Pixel", monospace;
     font-weight: 800;
     padding-right: 125px;
-    color: #ffffff;
+    color: #9058D7;
+}
+
+.navbar-brand:hover {
+    color: rgb(205, 150, 255);
 }
 
 .navbar-brand img {
@@ -83,7 +85,6 @@ a {
 
 .hero-heading {
     background-color: #000000;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .hero-section.row {
@@ -95,7 +96,7 @@ a {
     font-weight: 600;
     font-size: 50px;
     width: 80%;
-    color: #f2f2f2;
+    color: #FFFFFFf2;
 }
 
 .light-p {
@@ -105,7 +106,7 @@ a {
 
 .purple {
     font-family: "Geist Pixel", monospace;
-    color: #9058D7;
+    color: rgb(170, 85, 255);
 }
 
 .card {
@@ -114,7 +115,7 @@ a {
     border-radius: 12px;
     padding: 0;
     background-color: #000000;
-    color: #f2f2f2;
+    color: #FFFFFFf2;
     border: none;
 }
 
@@ -137,7 +138,7 @@ a {
 }
 
 .title {
-    color: #f2f2f2;
+    color: #FFFFFFf2;
 }
 
 .title:hover {
@@ -158,14 +159,14 @@ a {
 
 .modal-content {
     background-color: #000000;
-    color: #f2f2f2;
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #FFFFFFf2;
+    border: 1px solid #313131;
     border-radius: 20px;
     padding: 4px;
 }
 
 .modal-header {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid #313131;
     margin-bottom: 10px;
     padding-left: 0;
 }
@@ -215,13 +216,13 @@ a {
 }
 
 .modal-footer {
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-top: 1px solid #313131;
     padding: 0;
 }
 
 .modal button {
     background-color: #000000;
-    color: #f2f2f2;
+    color: #FFFFFFf2;
     padding: 8px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 12px;
@@ -231,13 +232,13 @@ a {
 
 footer {
     background-color: #000000;
-    color: #f2f2f2;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    color: #FFFFFFf2;
+    border-top: 1px solid #313131;
 }
 
 footer a {
     text-decoration: none;
-    color: #f2f2f2;
+    color: #FFFFFFf2;
     font-weight: 400;
     font-size: 12px;
 }
@@ -273,7 +274,7 @@ footer a:hover {
     .mobile-nav {
         opacity: 1;
         background-color: #000000;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        border-bottom: 1px solid #313131;
     }
 
     .desktop-nav {
