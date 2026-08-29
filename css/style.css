@@ -59,6 +59,7 @@ a {
     font-weight: 800;
     font-size: 18px;
     color: #9058D7;
+    padding: 6px 8px;
 }
 
 .navbar-brand:hover {
@@ -123,6 +124,19 @@ a {
 
 .hero-section .btn-custom:hover {
     color: #9058D7;
+}
+
+.badge {
+    display: inline-block;
+    background-color: rgba(170, 85, 255, 0.12);
+    color: rgb(205, 150, 255);
+    border: 1px solid rgba(170, 85, 255, 0.3);
+    border-radius: 6px;
+    padding: 3px 8px;
+    font-family: "Geist Pixel", monospace;
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 12px;
 }
 
 .about-section,
