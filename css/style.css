@@ -109,11 +109,20 @@ a {
 }
 
 .hero-section {
-    min-height: calc(100vh - 65px);
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 40px 0;
+}
+
+.hero-section .btn-custom {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.hero-section .btn-custom:hover {
+    color: #9058D7;
 }
 
 .about-section,
@@ -146,14 +155,13 @@ a {
     margin-right: auto;
 }
 
-.btn-custom,
-button:not(.navbar-toggler, .btn-close) {
+.btn-custom {
     display: inline-block;
     width: auto;
     min-width: 130px;
     padding: 10px 24px;
     border-radius: 10px;
-    border: 1px solid #3f3f3f;
+    border: 1px solid #313131;
     background-color: transparent;
     font-family: "Geist Pixel", monospace;
     font-weight: 800;
@@ -163,12 +171,10 @@ button:not(.navbar-toggler, .btn-close) {
     transition: all 0.2s ease-in-out;
 }
 
-.btn-custom:hover,
-button:not(.navbar-toggler, .btn-close):hover {
+.btn-custom:hover {
     cursor: pointer;
     color: #000000;
     background-color: #FFFFFF;
-    border-color: #FFFFFF;
 }
 
 .showcase-img {
@@ -285,6 +291,6 @@ footer a:hover {
 .copyright p {
     font-weight: 400;
     font-size: 12px;
-    color: #71717A;
+    color: #313131;
     margin-bottom: 0;
 }
