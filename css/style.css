@@ -213,8 +213,7 @@ a {
 }
 
 .contact input,
-.contact textarea,
-.contact .form-control {
+.contact textarea {
     font-family: "Geist Pixel", monospace;
     padding: 10px 14px;
     background-color: #000000;
@@ -232,8 +231,7 @@ a {
 }
 
 .contact input:focus,
-.contact textarea:focus,
-.contact .form-control:focus {
+.contact textarea:focus {
     outline: none;
     background-color: #000000;
     color: #FFFFFF;
