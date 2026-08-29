@@ -137,7 +137,7 @@ a {
 }
 
 .heading h1 {
-    font-weight: 400;
+    font-weight: 600;
     font-size: clamp(2rem, 4vw, 3rem);
     width: 100%;
     color: #FFFFFF;
@@ -153,14 +153,15 @@ a {
     height: auto;
     border-radius: 10px;
     padding: 0;
+    margin-bottom: 10px;
     background-color: #000000;
     color: #FFFFFF;
-    border: 1px solid #222222;
+    border: 1px solid rgba(255, 255, 255, 0.08);
     transition: border-color 0.3s ease;
 }
 
 .card:hover {
-    border-color: #313131;
+    border-color: rgba(255, 255, 255, 0.2);
 }
 
 .card a {
@@ -222,7 +223,7 @@ a {
     -ms-overflow-style: none;
     scrollbar-width: none;
     border: none;
-    padding: 16px;
+    padding: 16px 16px 0 16px;
 }
 
 .modal-body::-webkit-scrollbar {
@@ -265,13 +266,14 @@ a {
 
 .modal-footer {
     border: none;
-    padding: 12px 0 4px 0;
+    padding: 12px;
+    margin-bottom: 0;
 }
 
 .btn-custom,
 button:not(.navbar-toggler, .btn-close) {
     display: inline-block;
-    width: auto;
+    width: 100%;
     min-width: 130px;
     padding: 10px 24px;
     border-radius: 10px;
@@ -302,6 +304,7 @@ button:not(.navbar-toggler, .btn-close):hover {
     width: 100%;
     font-family: "Geist Pixel", monospace;
     font-size: 13px;
+    margin-bottom: 0;
 }
 
 .modal button:hover {
@@ -390,6 +393,6 @@ footer a:hover {
     }
 
     .card {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 }
