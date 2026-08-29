@@ -50,8 +50,8 @@ a {
 
 .navbar {
     background-color: #000000;
-    border-bottom: 1px solid #313131;
-    padding: 14px 0;
+    border-bottom: 1px solid #272727;
+    padding: 4px 0;
 }
 
 .navbar-brand {
@@ -161,7 +161,7 @@ a {
     min-width: 130px;
     padding: 10px 24px;
     border-radius: 10px;
-    border: 1px solid #313131;
+    border: 1px solid #272727;
     background-color: transparent;
     font-family: "Geist Pixel", monospace;
     font-weight: 800;
@@ -181,7 +181,7 @@ a {
     max-width: 100%;
     width: 650px;
     border-radius: 12px;
-    border: 1px solid #313131;
+    border: 1px solid #272727;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease;
 }
@@ -217,7 +217,7 @@ a {
     font-family: "Geist Pixel", monospace;
     padding: 10px 14px;
     background-color: #000000;
-    border: 1px solid #313131;
+    border: 1px solid #272727;
     border-radius: 6px;
     color: #FFFFFF;
     width: 100%;
@@ -242,7 +242,7 @@ a {
 footer {
     background-color: #000000;
     color: #FFFFFF;
-    border-top: 1px solid #313131;
+    border-top: 1px solid #272727;
     margin-top: auto;
 }
 
@@ -289,6 +289,6 @@ footer a:hover {
 .copyright p {
     font-weight: 400;
     font-size: 12px;
-    color: #313131;
+    color: #A1A1AA;
     margin-bottom: 0;
 }

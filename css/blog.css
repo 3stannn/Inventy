@@ -50,9 +50,9 @@ a {
     background-color: #000000;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid #313131;
+    border-bottom: 1px solid #272727;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
-    padding: 14px 0;
+    padding: 4px 0;
 }
 
 .desktop-nav {
@@ -61,7 +61,7 @@ a {
     z-index: 1000;
     width: 100%;
     background-color: #000000;
-    border-bottom: 1px solid #313131;
+    border-bottom: 1px solid #272727;
 }
 
 .mobile-nav {
@@ -203,13 +203,13 @@ a {
 .modal-content {
     background-color: #000000;
     color: #FFFFFF;
-    border: 1px solid #313131;
+    border: 1px solid #272727;
     border-radius: 24px;
     padding: 0px;
 }
 
 .modal-header {
-    border-bottom: 1px solid #313131;
+    border-bottom: 1px solid #272727;
     margin-bottom: 10px;
     padding: 12px 16px;
 }
@@ -262,7 +262,7 @@ a {
 
 .modal-footer {
     border: none;
-    padding: 4px 0 0 0;
+    padding: 4px;
     margin-bottom: 0;
 }
 
@@ -275,7 +275,7 @@ a {
     width: 100%;
     font-family: "Geist Pixel", monospace;
     font-size: 12px;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .modal button:hover {
@@ -287,7 +287,7 @@ a {
 footer {
     background-color: #000000;
     color: #FFFFFF;
-    border-top: 1px solid #313131;
+    border-top: 1px solid #272727;
     margin-top: auto;
 }
 
@@ -328,13 +328,13 @@ footer a:hover {
 .copyright {
     text-align: center;
     padding-top: 24px;
-    border-top: 1px solid rgba(220, 220, 220, 0.15);
+    border-top: 1px solid #272727;
 }
 
 .copyright p {
     font-weight: 400;
     font-size: 12px;
-    color: #313131;
+    color: #A1A1AA;
     margin-bottom: 0;
 }
 
@@ -352,7 +352,7 @@ footer a:hover {
     .mobile-nav {
         display: block !important;
         background-color: #000000;
-        border-bottom: 1px solid #313131;
+        border-bottom: 1px solid #272727;
     }
 
     .desktop-nav {
