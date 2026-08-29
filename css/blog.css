@@ -137,7 +137,7 @@ a {
 }
 
 .heading h1 {
-    font-weight: 600;
+    font-weight: 400;
     font-size: clamp(2rem, 4vw, 3rem);
     width: 100%;
     color: #FFFFFF;
