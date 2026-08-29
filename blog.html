@@ -18,18 +18,41 @@
 <body>
     <nav class="desktop-nav navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="index.html">inventy</a>
+            <a class="navbar-brand" href="index.html">Inventy</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav"></div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="blog.html">Blog</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
     <nav class="mobile-nav navbar fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">inventy</a>
+            <a class="navbar-brand" href="index.html">Inventy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavMobile"
+                aria-controls="navbarNavMobile" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavMobile">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="blog.html">Blog</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -574,20 +597,24 @@
         </section>
     </main>
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-8 mt-5">
-                    <a class="navbar-brand" href="index.html">
-                        inventy</a>
+        <div class="container py-5">
+            <div class="row gy-4">
+                <div class="col-12 col-md-8">
+                    <a class="footer-brand" href="index.html">Inventy</a>
                 </div>
-                <div class="col-12 col-md-2 mt-5">
-                    <a href="">Documentation</a> <br>
-                    <a href="">FAQ</a> <br>
-                    <a href="">Support</a>
+                <div class="col-6 col-md-2">
+                    <ul class="footer-links">
+                        <li><a href="">Documentation</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Support</a></li>
+                    </ul>
                 </div>
-                <div class="col-12 col-md-2 mt-5">
-                    <a href="">Linkedin</a> <br>
-                    <a target="_blank" href="https://github.com/3stannn/Inventy">GitHub</a> <br>
+                <div class="col-6 col-md-2">
+                    <ul class="footer-links">
+                        <li><a href="">LinkedIn</a></li>
+                        <li><a target="_blank" href="https://github.com/3stannn/Inventy" rel="noopener noreferrer">GitHub</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="copyright mt-5">

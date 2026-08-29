@@ -3,131 +3,185 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Geist", sans-serif;
+    box-sizing: border-box;
 }
 
-body {
+html, body {
+    font-family: "Geist", sans-serif;
     background-color: #000000;
+    color: #FFFFFF;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
 main {
-    flex: 1;
+    flex: 1 0 auto;
     display: flex;
     flex-direction: column;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0 20px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: #000000;
-  border-bottom: 1px solid #313131;
-}
-
-ul li a {
-  display: block;
-  color: #FFFFFF;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-family: "Geist Pixel", sans-serif;
-  font-size: 14px;
-  font-weight: 200;
-}
-
-ul li a:hover {
-    font-weight: 800;
-}
-
-.nav-brand {
-    font-size: 16px;
-    font-weight: 800;
-    margin-right: 50px;
-}
-
-.nav-brand:hover {
-    color: rgb(205, 150, 255);
-}
-
-.container {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 20px;
-    padding: 40px 20px;
-}
-
-.container img {
-    width: 50%;
-}
-
-.index img {
-    width: 80%;
-}
-
-.container h1 {
-    color: #FFFFFF;
-    font-weight: 400;
-}
-
-.container p {
-    color: #3f3f3f;
-}
-
-.pixel-font {
-    font-family: "Geist Pixel", sans-serif;
-    font-weight: 800;
-}
-
-.container button {
-    width: auto;
-    min-width: 120px;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: 1px solid #3f3f3f;
-    font-family: "Geist Pixel", sans-serif;
-    font-weight: 800;
-    color: #3f3f3f;
-}
-
-.container button:hover {
-    cursor: pointer;
+::selection {
+    background-color: #FFFFFF;
     color: #000000;
 }
 
-.about-section {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 20px;
-    text-align: center;
-    color: #FFFFFF;
-    gap: 20px;
+a {
+    text-decoration: none;
 }
 
-.about-section h1 {
-    font-weight: 400;
-}
-
-.about-section p {
-    color: #3f3f3f;
+.pixel-font {
+    font-family: "Geist Pixel", monospace;
+    font-weight: 800;
 }
 
 .purple {
-    font-family: "Geist Pixel", sans-serif;
+    font-family: "Geist Pixel", monospace;
     font-weight: 600;
     color: rgb(170, 85, 255);
+}
+
+.light-p {
+    font-weight: 400;
+    color: #A1A1AA;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: #000000;
+    border-bottom: 1px solid #313131;
+    padding: 14px 0;
+}
+
+.navbar-brand {
+    font-family: "Geist Pixel", monospace;
+    font-weight: 800;
+    font-size: 18px;
+    color: #9058D7;
+}
+
+.navbar-brand:hover {
+    color: rgb(205, 150, 255);
+}
+
+.navbar-nav .nav-link {
+    font-family: "Geist Pixel", monospace;
+    font-size: 14px;
+    font-weight: 400;
+    color: #A1A1AA;
+    padding: 8px 16px;
+    transition: color 0.2s ease, font-weight 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #FFFFFF;
+    font-weight: 800;
+}
+
+.navbar-toggler {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    padding: 6px 8px;
+    background: transparent !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:hover,
+.navbar-toggler:active {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    background: transparent !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.navbar-toggler:hover .navbar-toggler-icon {
+    opacity: 0.75;
+}
+
+.hero-section {
+    min-height: calc(100vh - 65px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.about-section,
+.feature-section,
+.showcase-section,
+.cta-section,
+.contact-section {
+    padding: 60px 0;
+}
+
+.hero-section h1,
+.about-section h1,
+.feature-section h1,
+.cta-section h1,
+.contact-section h1 {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    line-height: 1.3;
+}
+
+.hero-section p,
+.about-section p,
+.feature-section p,
+.cta-section p,
+.contact-section p {
+    color: #A1A1AA;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-custom,
+button:not(.navbar-toggler, .btn-close) {
+    display: inline-block;
+    width: auto;
+    min-width: 130px;
+    padding: 10px 24px;
+    border-radius: 10px;
+    border: 1px solid #3f3f3f;
+    background-color: transparent;
+    font-family: "Geist Pixel", monospace;
+    font-weight: 800;
+    font-size: 14px;
+    color: #A1A1AA;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-custom:hover,
+button:not(.navbar-toggler, .btn-close):hover {
+    cursor: pointer;
+    color: #000000;
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+.showcase-img {
+    max-width: 100%;
+    width: 650px;
+    border-radius: 12px;
+    border: 1px solid #313131;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.showcase-img:hover {
+    transform: scale(1.02);
 }
 
 .contact {
@@ -135,9 +189,9 @@ ul li a:hover {
     flex-direction: column;
     gap: 15px;
     width: 100%;
-    max-width: 400px;
+    max-width: 420px;
+    margin: 24px auto 0 auto;
     text-align: left;
-    margin: 10px 0;
 }
 
 .contact-group {
@@ -148,14 +202,15 @@ ul li a:hover {
 
 .contact label {
     color: #FFFFFF;
-    font-family: "Geist Pixel", sans-serif;
+    font-family: "Geist Pixel", monospace;
     font-size: 14px;
 }
 
 .contact input,
-.contact textarea {
-    font-family: "Geist Pixel", sans-serif;
-    padding: 10px;
+.contact textarea,
+.contact .form-control {
+    font-family: "Geist Pixel", monospace;
+    padding: 10px 14px;
     background-color: #000000;
     border: 1px solid #313131;
     border-radius: 6px;
@@ -166,29 +221,70 @@ ul li a:hover {
 }
 
 .contact textarea {
-    min-height: 90px;
+    min-height: 100px;
     resize: vertical;
 }
 
 .contact input:focus,
-.contact textarea:focus {
+.contact textarea:focus,
+.contact .form-control:focus {
     outline: none;
+    background-color: #000000;
+    color: #FFFFFF;
     border-color: rgb(170, 85, 255);
+    box-shadow: 0 0 0 0.2rem rgba(170, 85, 255, 0.25);
 }
 
 footer {
-    border-top: 1px solid #313131;
-    padding: 14px 16px;
+    background-color: #000000;
     color: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    border-top: 1px solid #313131;
+    margin-top: auto;
 }
 
-footer p {
-    font-family: "Geist Pixel", sans-serif;
-    font-size: 14px;
-    font-weight: 200;
-    color: #FFFFFF;
+.footer-brand {
+    font-family: "Geist Pixel", monospace;
+    font-weight: 800;
+    font-size: 20px;
+    color: #9058D7;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.footer-brand:hover {
+    color: rgb(205, 150, 255);
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #A1A1AA;
+    font-weight: 400;
+    font-size: 13px;
+    transition: color 0.2s ease;
+}
+
+footer a:hover {
+    color: #CF9704;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 24px;
+    border-top: 1px solid rgba(220, 220, 220, 0.15);
+}
+
+.copyright p {
+    font-weight: 400;
+    font-size: 12px;
+    color: #71717A;
+    margin-bottom: 0;
 }
