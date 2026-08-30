@@ -35,7 +35,33 @@ body {
 }
 
 .sidebar-brand-container {
-    padding: 4px 16px 24px 16px;
+    padding: 4px 8px 24px 8px;
+}
+
+.profile-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+}
+
+.profile-chip img {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 1.5px solid #9058D7;
+}
+
+.profile-chip .name {
+    font-family: "Geist Pixel", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+    line-height: 1.2;
+    white-space: nowrap;
 }
 
 .navbar-brand {
@@ -44,17 +70,26 @@ body {
     font-weight: 800;
     color: #000000;
     text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar-brand:hover,
 .navbar-brand:focus {
     color: #000000;
+    text-decoration: none;
 }
 
 .brand-icon {
     width: 20px;
     height: 20px;
     object-fit: contain;
+    flex-shrink: 0;
+    display: block;
 }
 
 .sidebar-nav {
