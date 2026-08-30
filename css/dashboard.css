@@ -8,11 +8,14 @@
 }
 
 body {
-    background-color: #FFFFFF;
+    background-color: #F8F8FA;
     color: #000000;
     min-height: 100vh;
 }
 
+/* ==========================================================================
+   Desktop Navigation (Sidebar)
+   ========================================================================== */
 .desktop-nav {
     position: fixed;
     top: 0;
@@ -81,7 +84,7 @@ body {
     padding-top: 16px;
 }
 
-.sidebar-footer hr {
+hr {
     border: none;
     border-top: 1px solid rgb(230, 230, 230);
     margin: 16px 0;
@@ -116,8 +119,12 @@ body {
     text-decoration: underline;
 }
 
+/* ==========================================================================
+   Mobile Navigation
+   ========================================================================== */
 .mobile-nav {
     background-color: #FFFFFF;
+    border: none;
     border-bottom: 1px solid rgb(220, 220, 220);
     padding: 12px 16px;
     z-index: 1030;
@@ -200,18 +207,38 @@ body {
     opacity: 1;
 }
 
+/* ==========================================================================
+   Main Content Layout & Typography
+   ========================================================================== */
 main {
     min-height: 100vh;
-    background-color: #e2e7ef;
+    background-color: #F8F8FA;
 }
 
+main h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+}
+
+main p {
+    color: #737373;
+    font-family: "Geist Pixel", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+/* ==========================================================================
+   Cards & Common Elements
+   ========================================================================== */
 .card {
     background-color: #FFFFFF;
     border: 1px solid rgb(230, 235, 242);
     border-radius: 12px;
     padding: 20px;
     min-height: 140px;
-    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -224,10 +251,11 @@ main {
 }
 
 .card h2 {
-    font-size: clamp(1.5rem, 2.2vw, 1.875rem);
+    font-size: 28px;
     font-weight: 700;
     margin: 8px 0;
     color: #000000;
+    letter-spacing: -0.5px;
 }
 
 .card p {
@@ -244,6 +272,291 @@ main {
     color: #000000;
 }
 
+.unit-text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #737373;
+}
+
+.badge-mini {
+    font-family: "Geist Pixel", monospace;
+    font-size: 11px;
+    font-weight: 600;
+    color: #737373;
+    background-color: #F8F8FA;
+    padding: 2px 8px;
+    border-radius: 4px;
+    border: 1px solid rgb(230, 235, 242);
+}
+
+.trend-badge {
+    font-family: "Geist Pixel", monospace;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 7px;
+    border-radius: 4px;
+}
+
+.trend-badge.positive {
+    background-color: #DCFCE7;
+    color: #15803D;
+}
+
+.trend-badge.warning {
+    background-color: #FEF3C7;
+    color: #92400E;
+}
+
+.trend-badge.neutral {
+    background-color: #F3F4F6;
+    color: #374151;
+}
+
+/* ==========================================================================
+   Product List (Top Selling Products)
+   ========================================================================== */
+.product-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.product-item {
+    padding-bottom: 8px;
+    border-bottom: 1px dashed rgb(240, 240, 240);
+}
+
+.product-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.product-thumb {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    object-fit: cover;
+    background-color: #F8F8FA;
+    border: 1px solid rgb(230, 235, 242);
+    flex-shrink: 0;
+}
+
+.product-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 0;
+    line-height: 1.2;
+}
+
+.product-meta {
+    font-family: "Geist Pixel", sans-serif;
+    font-size: 11px;
+    color: #737373;
+}
+
+.product-units {
+    font-family: "Geist Pixel", sans-serif;
+    font-size: 11px;
+    color: #737373;
+}
+
+/* ==========================================================================
+   Analytics Chart
+   ========================================================================== */
+.chart-container {
+    height: 110px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 6px;
+    padding: 0 4px;
+}
+
+.bar-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.bar-track {
+    width: 100%;
+    max-width: 24px;
+    height: 75px;
+    background-color: #F8F8FA;
+    border-radius: 4px 4px 0 0;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.bar-fill {
+    width: 100%;
+    background-color: #D1D5DB;
+    border-radius: 4px 4px 0 0;
+    transition: height 0.3s ease, background-color 0.2s ease;
+}
+
+.bar-group:hover .bar-fill {
+    background-color: #000000;
+}
+
+.bar-fill.active-bar {
+    background-color: #000000;
+}
+
+.bar-label {
+    font-family: "Geist Pixel", sans-serif;
+    font-size: 11px;
+    color: #737373;
+    margin-top: 4px;
+}
+
+.analytics-metrics {
+    display: flex;
+    gap: 8px;
+}
+
+.metric-box {
+    flex: 1;
+    background-color: #F8F8FA;
+    border: 1px solid rgb(230, 235, 242);
+    border-radius: 8px;
+    padding: 8px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.metric-title {
+    font-family: "Geist Pixel", sans-serif;
+    font-size: 11px;
+    color: #737373;
+}
+
+/* ==========================================================================
+   Revenue / Category Breakdown
+   ========================================================================== */
+.segmented-progress {
+    display: flex;
+    height: 8px;
+    border-radius: 999px;
+    overflow: hidden;
+    background-color: #F8F8FA;
+    gap: 2px;
+}
+
+.segment.seg-1 { background-color: #000000; }
+.segment.seg-2 { background-color: #4B5563; }
+.segment.seg-3 { background-color: #9CA3AF; }
+.segment.seg-4 { background-color: #D1D5DB; }
+
+.category-meta {
+    font-size: 12px;
+}
+
+.category-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 12px;
+    color: #737373;
+    font-family: "Geist Pixel", sans-serif;
+}
+
+.category-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 2px;
+}
+
+.dot-1 { background-color: #000000; }
+.dot-2 { background-color: #4B5563; }
+.dot-3 { background-color: #9CA3AF; }
+.dot-4 { background-color: #D1D5DB; }
+
+/* ==========================================================================
+   Table Styling
+   ========================================================================== */
+.custom-table th {
+    font-family: "Geist Pixel", monospace;
+    font-size: 11px;
+    font-weight: 700;
+    color: #737373;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background-color: #F8F8FA;
+    padding: 10px 12px;
+    border-bottom: 1px solid rgb(230, 235, 242);
+}
+
+.custom-table td {
+    padding: 12px;
+    font-family: "Geist Pixel", sans-serif;
+    font-size: 12px;
+    color: #737373;
+    border-bottom: 1px solid rgb(240, 240, 240);
+}
+
+.custom-table tbody tr:hover td {
+    background-color: #FAFAFB;
+}
+
+.table-thumb {
+    width: 28px;
+    height: 28px;
+    border-radius: 4px;
+    object-fit: cover;
+    background-color: #F8F8FA;
+    border: 1px solid rgb(230, 235, 242);
+}
+
+.bin-badge {
+    font-family: "Geist Pixel", monospace;
+    font-size: 11px;
+    background-color: #F8F8FA;
+    color: #000000;
+    padding: 2px 6px;
+    border-radius: 4px;
+    border: 1px solid rgb(230, 235, 242);
+}
+
+.status-pill {
+    display: inline-block;
+    font-family: "Geist Pixel", monospace;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 999px;
+}
+
+.status-shipped {
+    background-color: #E0F2FE;
+    color: #0369A1;
+}
+
+.status-processing {
+    background-color: #FEF3C7;
+    color: #92400E;
+}
+
+.status-restocked {
+    background-color: #DCFCE7;
+    color: #15803D;
+}
+
+.status-alert {
+    background-color: #FEE2E2;
+    color: #B91C1C;
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
 @media (min-width: 768px) {
     .mobile-nav {
         display: none !important;
@@ -270,6 +583,11 @@ main {
 
     main {
         margin-left: 0;
-        padding: 76px 20px 32px;
+        padding: 76px 16px 32px;
+    }
+
+    .card {
+        padding: 16px;
+        min-height: 120px;
     }
 }

@@ -24,14 +24,13 @@
                     <a class="navbar-brand" href="dashboard.html">Dashboard</a>
                 </div>
                 <ul class="sidebar-nav">
-                    <li><a href="" class="active">Home</a></li>
+                    <li><a href="" class="active">Overview</a></li>
                     <li><a href="">Products</a></li>
                     <li><a href="">Orders</a></li>
                     <li><a href="">Inventory</a></li>
+                    <hr>
                     <li><a href="">Finance</a></li>
-                    <li><a href="">Customers</a></li>
                     <li><a href="">Analytics</a></li>
-                    <li><a href="">Marketing</a></li>
                     <li><a href="">Settings</a></li>
                 </ul>
                 <div class="sidebar-footer">
@@ -54,27 +53,26 @@
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
-                        <a class="navbar-brand" id="offcanvasNavbarLabel" href="dashboard.html">_<</a>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        <a class="navbar-brand" id="offcanvasNavbarLabel" href="dashboard.html">Dashboard</a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
                         <ul class="sidebar-nav">
-                            <li><a href="" class="active">Home</a></li>
+                            <li><a href="" class="active">Overview</a></li>
                             <li><a href="">Products</a></li>
                             <li><a href="">Orders</a></li>
                             <li><a href="">Inventory</a></li>
+                            <hr>
                             <li><a href="">Finance</a></li>
-                            <li><a href="">Customers</a></li>
                             <li><a href="">Analytics</a></li>
-                            <li><a href="">Marketing</a></li>
                             <li><a href="">Settings</a></li>
                         </ul>
                         <div class="sidebar-footer mt-auto">
                             <hr>
                             <div class="contact">
                                 <p class="contact-desc">For work, collabs & everything else, reach me at</p>
-                                <p class="email"><a href="mailto:thristandave12@gmail.com">thristandave12@gmail.com</a>
-                                </p>
+                                <p class="email"><a href="mailto:thristandave12@gmail.com">thristandave12@gmail.com</a></p>
                             </div>
                         </div>
                     </div>
@@ -85,59 +83,326 @@
 
     <main>
         <div class="container-fluid">
-            <div class="row g-3">
+            <!-- Header Section -->
+            <div class="row">
+                <div class="col-12">
+                    <h2>Warehouse Overview</h2>
+                    <p>Real-time inventory metrics, orders, and fulfillment updates.</p>
+                </div>
+            </div>
+
+            <!-- Row 1: 4 Key Metric Cards -->
+            <div class="row g-3 mt-1">
                 <div class="col-12 col-sm-6 col-xl-3">
                     <div class="card h-100">
-                        <p>Total Sales</p>
-                        <h2>$12,982</h2>
-                        <p class="mb-0">Compared to <span class="heavy">$10,678</span> last month</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p>Total Revenue</p>
+                            <span class="trend-badge positive">↑ +18.4%</span>
+                        </div>
+                        <h2>$124,982</h2>
+                        <p class="mb-0">Compared to <span class="heavy">$105,678</span> last month</p>
                     </div>
                 </div>
+
                 <div class="col-12 col-sm-6 col-xl-3">
                     <div class="card h-100">
-                        <p>Active Orders</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p>Active Orders</p>
+                            <span class="trend-badge positive">↑ +12.1%</span>
+                        </div>
                         <h2>1,890</h2>
                         <p class="mb-0">Compared to <span class="heavy">586</span> last month</p>
                     </div>
                 </div>
+
                 <div class="col-12 col-sm-6 col-xl-3">
                     <div class="card h-100">
-                        <p>Low Stock Items</p>
-                        <h2>871</h2>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p>Low Stock Alerts</p>
+                            <span class="trend-badge warning">⚡ Action</span>
+                        </div>
+                        <h2>14 <span class="unit-text">SKUs</span></h2>
                         <p class="mb-0">Compared to <span class="heavy">301</span> last month</p>
                     </div>
                 </div>
+
                 <div class="col-12 col-sm-6 col-xl-3">
                     <div class="card h-100">
-                        <p>Total Inventory</p>
-                        <h2>2,878</h2>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p>Total Units in Stock</p>
+                            <span class="trend-badge neutral">94.8% Cap</span>
+                        </div>
+                        <h2>28,478</h2>
                         <p class="mb-0">Compared to <span class="heavy">1,459</span> last month</p>
                     </div>
                 </div>
             </div>
 
+            <!-- Row 2: 3 Middle Performance Cards -->
             <div class="row g-3 mt-1">
+                <!-- Top Selling Products -->
                 <div class="col-12 col-md-6 col-xl-4">
                     <div class="card h-100">
-                        <p class="mb-0">Top Selling Products</p>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <p class="heavy mb-0">Top Selling Products</p>
+                            <span class="badge-mini">This Month</span>
+                        </div>
+                        <div class="product-list">
+                            <div class="product-item d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center gap-2">
+                                    <img src="img/1.png" alt="Scanner" class="product-thumb">
+                                    <div>
+                                        <h5 class="product-name">Barcode Scanner Pro</h5>
+                                        <span class="product-meta">SKU: INV-01 • $149</span>
+                                    </div>
+                                </div>
+                                <div class="text-end">
+                                    <span class="heavy d-block">$28,450</span>
+                                    <span class="product-units">192 sold</span>
+                                </div>
+                            </div>
+
+                            <div class="product-item d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center gap-2">
+                                    <img src="img/2.png" alt="Printer" class="product-thumb">
+                                    <div>
+                                        <h5 class="product-name">Thermal Label Printer</h5>
+                                        <span class="product-meta">SKU: INV-09 • $89</span>
+                                    </div>
+                                </div>
+                                <div class="text-end">
+                                    <span class="heavy d-block">$19,580</span>
+                                    <span class="product-units">220 sold</span>
+                                </div>
+                            </div>
+
+                            <div class="product-item d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center gap-2">
+                                    <img src="img/3.png" alt="RFID Tags" class="product-thumb">
+                                    <div>
+                                        <h5 class="product-name">RFID Smart Tags (100pk)</h5>
+                                        <span class="product-meta">SKU: INV-44 • $35</span>
+                                    </div>
+                                </div>
+                                <div class="text-end">
+                                    <span class="heavy d-block">$14,200</span>
+                                    <span class="product-units">405 sold</span>
+                                </div>
+                            </div>
+
+                            <div class="product-item d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center gap-2">
+                                    <img src="img/4.png" alt="Dock Scale" class="product-thumb">
+                                    <div>
+                                        <h5 class="product-name">Digital Dock Scale</h5>
+                                        <span class="product-meta">SKU: INV-12 • $320</span>
+                                    </div>
+                                </div>
+                                <div class="text-end">
+                                    <span class="heavy d-block">$11,840</span>
+                                    <span class="product-units">37 sold</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Weekly Orders Volume Chart -->
                 <div class="col-12 col-md-6 col-xl-4">
                     <div class="card h-100">
-                        <p class="mb-0">Analytics</p>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <p class="heavy mb-0">Weekly Orders Volume</p>
+                            <span class="badge-mini">Peak: Thu (340)</span>
+                        </div>
+                        <div class="chart-container">
+                            <div class="bar-group">
+                                <div class="bar-track">
+                                    <div class="bar-fill" style="height: 65%;"></div>
+                                </div>
+                                <span class="bar-label">Mon</span>
+                            </div>
+                            <div class="bar-group">
+                                <div class="bar-track">
+                                    <div class="bar-fill" style="height: 80%;"></div>
+                                </div>
+                                <span class="bar-label">Tue</span>
+                            </div>
+                            <div class="bar-group">
+                                <div class="bar-track">
+                                    <div class="bar-fill" style="height: 55%;"></div>
+                                </div>
+                                <span class="bar-label">Wed</span>
+                            </div>
+                            <div class="bar-group">
+                                <div class="bar-track">
+                                    <div class="bar-fill active-bar" style="height: 95%;"></div>
+                                </div>
+                                <span class="bar-label">Thu</span>
+                            </div>
+                            <div class="bar-group">
+                                <div class="bar-track">
+                                    <div class="bar-fill" style="height: 75%;"></div>
+                                </div>
+                                <span class="bar-label">Fri</span>
+                            </div>
+                            <div class="bar-group">
+                                <div class="bar-track">
+                                    <div class="bar-fill" style="height: 45%;"></div>
+                                </div>
+                                <span class="bar-label">Sat</span>
+                            </div>
+                            <div class="bar-group">
+                                <div class="bar-track">
+                                    <div class="bar-fill" style="height: 35%;"></div>
+                                </div>
+                                <span class="bar-label">Sun</span>
+                            </div>
+                        </div>
+
+                        <div class="analytics-metrics mt-3">
+                            <div class="metric-box">
+                                <span class="metric-title">Fulfillment Speed</span>
+                                <span class="heavy">1.4 hrs avg</span>
+                            </div>
+                            <div class="metric-box">
+                                <span class="metric-title">Dispatch Accuracy</span>
+                                <span class="heavy text-success">99.8%</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Inventory Health -->
                 <div class="col-12 col-md-12 col-xl-4">
                     <div class="card h-100">
-                        <p class="mb-0">Revenue</p>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <p class="heavy mb-0">Inventory Health</p>
+                            <span class="badge-mini text-success">Healthy</span>
+                        </div>
+
+                        <div class="segmented-progress mb-2">
+                            <div class="segment seg-1" style="width: 45%;" title="Warehouse Hardware: 45%"></div>
+                            <div class="segment seg-2" style="width: 30%;" title="Scanners & Print: 30%"></div>
+                            <div class="segment seg-3" style="width: 15%;" title="RFID & Labels: 15%"></div>
+                            <div class="segment seg-4" style="width: 10%;" title="Packaging: 10%"></div>
+                        </div>
+                        <p class="category-meta mb-3">Total Volume: <span class="heavy">28,478 units</span></p>
+
+                        <div class="category-list">
+                            <div class="category-item d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center gap-2">
+                                    <span class="category-dot dot-1"></span>
+                                    <span>Warehouse Hardware</span>
+                                </div>
+                                <span class="heavy">12,450 (45%)</span>
+                            </div>
+                            <div class="category-item d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center gap-2">
+                                    <span class="category-dot dot-2"></span>
+                                    <span>Scanners & Printers</span>
+                                </div>
+                                <span class="heavy">8,120 (30%)</span>
+                            </div>
+                            <div class="category-item d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center gap-2">
+                                    <span class="category-dot dot-3"></span>
+                                    <span>RFID & Labels</span>
+                                </div>
+                                <span class="heavy">5,400 (15%)</span>
+                            </div>
+                            <div class="category-item d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center gap-2">
+                                    <span class="category-dot dot-4"></span>
+                                    <span>Packaging & Supplies</span>
+                                </div>
+                                <span class="heavy">2,508 (10%)</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
+            <!-- Row 3: 1 Full-width Recent Activities Table Card -->
             <div class="row g-3 mt-1">
                 <div class="col-12">
                     <div class="card h-100">
-                        <p class="mb-0">Recent Activities</p>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <p class="heavy mb-0">Recent Stock Movements & Orders</p>
+                            <span class="badge-mini">Live Log</span>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table custom-table align-middle mb-0">
+                                <thead>
+                                    <tr>
+                                        <th>Order ID</th>
+                                        <th>Item Description</th>
+                                        <th>Warehouse Bin</th>
+                                        <th>Date & Time</th>
+                                        <th>Quantity</th>
+                                        <th>Total</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span class="heavy">#ORD-9082</span></td>
+                                        <td>
+                                            <div class="d-flex align-items-center gap-2">
+                                                <img src="img/1.png" alt="Scanner" class="table-thumb">
+                                                <span>Barcode Scanner Pro (x4)</span>
+                                            </div>
+                                        </td>
+                                        <td><span class="bin-badge">BAY-A-04</span></td>
+                                        <td>Today, 11:42 AM</td>
+                                        <td>+4 units</td>
+                                        <td><span class="heavy">$596.00</span></td>
+                                        <td><span class="status-pill status-shipped">Shipped</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="heavy">#ORD-9081</span></td>
+                                        <td>
+                                            <div class="d-flex align-items-center gap-2">
+                                                <img src="img/2.png" alt="Printer" class="table-thumb">
+                                                <span>Thermal Label Printer (x1)</span>
+                                            </div>
+                                        </td>
+                                        <td><span class="bin-badge">BAY-B-12</span></td>
+                                        <td>Today, 10:15 AM</td>
+                                        <td>+1 unit</td>
+                                        <td><span class="heavy">$89.00</span></td>
+                                        <td><span class="status-pill status-processing">Processing</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="heavy">#RESTOCK-412</span></td>
+                                        <td>
+                                            <div class="d-flex align-items-center gap-2">
+                                                <img src="img/3.png" alt="Tags" class="table-thumb">
+                                                <span>RFID Smart Tags (Box of 50)</span>
+                                            </div>
+                                        </td>
+                                        <td><span class="bin-badge">BAY-C-02</span></td>
+                                        <td>Today, 08:30 AM</td>
+                                        <td>+5,000 tags</td>
+                                        <td><span class="heavy">$1,750.00</span></td>
+                                        <td><span class="status-pill status-restocked">Restocked</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="heavy">#ORD-9079</span></td>
+                                        <td>
+                                            <div class="d-flex align-items-center gap-2">
+                                                <img src="img/4.png" alt="Scale" class="table-thumb">
+                                                <span>Digital Dock Scale 500kg</span>
+                                            </div>
+                                        </td>
+                                        <td><span class="bin-badge">BAY-D-01</span></td>
+                                        <td>Yesterday, 4:20 PM</td>
+                                        <td>1 unit</td>
+                                        <td><span class="heavy">$320.00</span></td>
+                                        <td><span class="status-pill status-alert">Low Stock Alert</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -147,5 +412,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
-</html>
 </html>
